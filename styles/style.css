@@ -104,6 +104,7 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
 }
 
 .content__video-card-description-container {
@@ -233,6 +234,7 @@ ol {
   border: none;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
+  appearance: none;
 }
 
 .search-form__textfield::placeholder {
@@ -261,7 +263,7 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: block;
-  border: 1px solid #FFF;
+  outline: 1px solid #FFF;
   inline-size: 19px;
   block-size: 19px;
 }
@@ -276,15 +278,16 @@ ol {
 }
 
 .search-form__checkbox {
-  border: 1px solid #FFF;
+  outline: 1px solid #FFF;
   width: 19px;
   height: 19px;
+  appearance: none;
 }
 
 .button {
   cursor: pointer;
   display: flex;
-  border: 1px solid #FFF;
+  outline: 1px solid #FFF;
   justify-content: center;
   align-items: center;
   background: transparent;
