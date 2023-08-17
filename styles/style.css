@@ -105,6 +105,7 @@ ol {
   block-size: 103px;
   object-fit: cover;
   object-position: center;
+  padding: 1px;
 }
 
 .content__video-card-description-container {
@@ -135,7 +136,7 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
-  padding: 2px;
+  margin: 2px;
 }
 
 .content__card-link:active {
@@ -147,13 +148,12 @@ ol {
   text-underline-offset: 3px;
 }
 
-.content__card-link:focus-visible {
-  outline: 1px solid #FFF;
-  text-underline-offset: 1px;
-}
-
 .content__card-link:focus {
   outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #FFF;
 }
 
 .content__card-link_current {
@@ -294,10 +294,14 @@ ol {
   border: none;
   cursor: pointer;
   display: flex;
-  outline: 1px solid currentColor;
+  border: 1px solid currentColor;
   justify-content: center;
   align-items: center;
   background: transparent;
+  color: #FFF;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .button:active {
@@ -320,20 +324,10 @@ ol {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-  color: #FFF;
-  text-align: center;
-  font-family: Fira Sans Condensed, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .more-button {
-  width: 399px;
+  width: 397px;
   height: 34px;
-  color: #FFF;
-  text-align: center;
-  font-family: Fira Sans Condensed, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
   margin: 2px;
 }
